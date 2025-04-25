@@ -4,6 +4,8 @@
  */
 
 const locales = {
+    'zh-cn': {name: '简体中文'},
+    'zh-tw': {name: '繁體中文'},
     'ab': {name: 'Аҧсшәа'},
     'af': {name: 'Afrikaans'},
     'ar': {name: 'العربية'},
@@ -81,12 +83,19 @@ const locales = {
     'sv': {name: 'Svenska'},
     'vi': {name: 'Tiếng Việt'},
     'tr': {name: 'Türkçe'},
-    'uk': {name: 'Українська'},
-    'zh-cn': {name: '简体中文'},
-    'zh-tw': {name: '繁體中文'}
+    'uk': {name: 'Українська'}
 };
 
 const customLocales = {
+    // TODO: replace zh-cn, zh-tw with zh-Hans and zh-Hant then customLocales is unnecessary
+    'zh-cn': {
+        locale: 'zh-cn',
+        parentLocale: 'zh'
+    },
+    'zh-tw': {
+        locale: 'zh-tw',
+        parentLocale: 'zh'
+    },
     'ab': {
         locale: 'ab',
         parentLocale: 'ru'
@@ -108,15 +117,6 @@ const customLocales = {
     'rap': {
         locale: 'rap',
         parentLocale: 'es'
-    },
-    // TODO: replace zh-cn, zh-tw with zh-Hans and zh-Hant then customLocales is unnecessary
-    'zh-cn': {
-        locale: 'zh-cn',
-        parentLocale: 'zh'
-    },
-    'zh-tw': {
-        locale: 'zh-tw',
-        parentLocale: 'zh'
     }
 };
 

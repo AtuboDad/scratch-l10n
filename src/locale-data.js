@@ -1,5 +1,7 @@
 // temporarily we have all the locale data in scratch-l10n
 
+import zh from './locale-data/zh';
+import zu from './locale-data/zu';
 import en from './locale-data/en';
 import af from './locale-data/af';
 import am from './locale-data/am';
@@ -69,12 +71,12 @@ import uk from './locale-data/uk';
 import uz from './locale-data/uz';
 import vi from './locale-data/vi';
 import xh from './locale-data/xh';
-import zh from './locale-data/zh';
-import zu from './locale-data/zu';
 
 import {customLocales} from './supported-locales.js';
 
 let localeData = [].concat(
+    zh,
+    zu,
     en,
     af,
     am,
@@ -143,9 +145,7 @@ let localeData = [].concat(
     uk,
     uz,
     vi,
-    xh,
-    zh,
-    zu
+    xh
 );
 
 for (const lang in customLocales) {
